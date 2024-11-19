@@ -37,8 +37,8 @@ document.querySelector(".button_submit").addEventListener("mouseover", () => {
 document.querySelector(".button_check_id").addEventListener("click", () => {
   const userId = document.querySelector(".id_box_real").innerText;
 
-  if (userId.length < 30) {
-    alert("ID가 너무 짧습니다! 보안을 위해 30글자 이상으로 만들어주세요");
+  if (userId.length < 24) {
+    alert("ID가 너무 짧습니다! 보안을 위해 24글자 이상으로 만들어주세요");
   } else {
     alert("안전한 인터넷 생활에 더 가까워졌습니다");
     validMap.ID = true;
