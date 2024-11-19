@@ -64,6 +64,14 @@
   color: gray;
 }
 
+.wrap_id .id_box_fake .id_box_real br {
+  display: none;
+}
+
+.wrap_id .id_box_fake .id_box_real div {
+  display: inline;
+}
+
 .wrap_id .button_check_id {
   flex: 0 0 auto;
   align-self: center;
