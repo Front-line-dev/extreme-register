@@ -1,0 +1,25 @@
+.wrap_id {
+  display: flex;
+  gap: 6px;
+}
+
+.wrap_id span {
+  flex: 0 0 auto;
+}
+
+.wrap_id .id_box_fake {
+  flex: 0 0 70px;
+  position: relative;
+  border: 1px solid black;
+  width: 70px;
+}
+
+.wrap_id .id_box_fake .id_box_real {
+  width: max-content;
+  min-width: 70px;
+  color: gray;
+}
+
+.wrap_id .button_check_id {
+  flex: 0 0 auto;
+}
