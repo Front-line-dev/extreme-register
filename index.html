@@ -4,19 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./popup.css" />
     <link rel="icon" href="./favicon.png" type="image/png" />
     <script src="./main.js" defer></script>
+    <script src="./dvd.js" defer></script>
   </head>
   <body>
-    <h1>놀라운 회원가입</h1>
+    <div class="popup">
+      <div class="popup_background"></div>
+      <span class="popup_text">엄청난 광고</span>
+      <a href="./trap.html" class="link_trap"></a>
+      <button type="button" class="button button_close_trap">X</button>
+    </div>
     <div class="container">
+      <h1>놀라운 회원가입</h1>
+      <button type="button" class="button button_submit">
+        회원가입 제출하기
+      </button>
       <div class="wrap_id">
         <span>ID: </span>
         <div class="id_box_fake">
           <div class="id_box_real" contenteditable="true">아이디</div>
         </div>
-        <button type="button" class="button_check_id">중복 확인</button>
+        <button type="button" class="button button_check_id">중복 확인</button>
+      </div>
+      <div class="wrap_password">
+        <span>Password: </span>
+        <label for="" class="label_password">
+          <span class="label_password_text">&nbsp;</span>
+          <input type="text" class="input_password" />
+        </label>
+        <button type="button" class="button button_check_password">
+          비밀번호 보안확인
+        </button>
       </div>
     </div>
   </body>

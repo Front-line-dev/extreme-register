@@ -1,10 +1,53 @@
+.container {
+  margin: 10px;
+}
+
+.popup {
+  z-index: 100;
+  position: absolute;
+  inset: 0 0 auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+  opacity: 0;
+  height: 300px;
+  background-color: white;
+  transition: transform 120ms;
+}
+
+.popup.active {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.link_trap {
+  position: absolute;
+  inset: 0;
+}
+
+.button_close_trap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.button {
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
 .wrap_id {
   display: flex;
+  align-items: center;
   gap: 6px;
 }
 
 .wrap_id span {
   flex: 0 0 auto;
+  font-size: 20px;
 }
 
 .wrap_id .id_box_fake {
@@ -17,9 +60,33 @@
 .wrap_id .id_box_fake .id_box_real {
   width: max-content;
   min-width: 70px;
+  font-size: 20px;
   color: gray;
 }
 
 .wrap_id .button_check_id {
   flex: 0 0 auto;
+  align-self: center;
+}
+
+.wrap_password {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.label_password {
+  position: relative;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.input_password {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.button_check_password {
+  align-self: stretch;
 }
